@@ -1,0 +1,94 @@
+<style>
+    li {
+        color: white;
+    }
+</style>
+<div style="height: 72px; width: 100%; background-color: #004c72; ">
+    <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;"><img
+            style="height: 43.5px; width:180px; margin-top: 12.8px; margin-left: 68.45px;"
+            src="recursos/imgs/SI_H1.png"><img style="height: 73.05px; width:108.45px; margin-left:170.85px;"
+            src="recursos/imgs/SI_H2.png"><img style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;"
+            src="recursos/imgs/SI_H3.png">
+    </div>
+</div>
+<div class="coluna-esquerda largura-1_1" style="width: 100%;margin-top: 10px;margin-left: 40px;">
+    <h1>Máscara</h1>
+    <p>As máscaras também são importante parte das medidas preventivas, juntamente com a higiene frequente de
+        mãos e o
+        distanciamento social.</p>
+    <p>Basicamente, existem três tipos de máscaras: as cirúrgicas, a N95/PFF2 e as máscaras de pano (caseiras).
+    </p>
+    <p style="margin-bottom: 60px;"><strong style="color: #004c72;">Clique</strong> nas sanfonas
+        para conhecer as especificidades de cada uma delas.</p>
+    <img src="recursos/imgs/SI_32a.png"
+        style="margin-left: 100px;margin-top: -40px;width: 633.95px;height: 65px;cursor: pointer;"
+        class="btn animate__animated animate__backInRight" id="botao_1">
+    <img src="recursos/imgs/SI_32b.png"
+        style="margin-left: 100px;margin-top: 10px;width: 633.95px;height: 65px;cursor: pointer;"
+        class="btn animate__animated animate__backInLeft" id="botao_2">
+    <img src="recursos/imgs/SI_32c.png"
+        style="margin-left: 100px;margin-top: 10px;width: 633.95px;height: 65px;cursor: pointer;"
+        class="btn animate__animated animate__backInRight" id="botao_2">
+    <div>
+        <div id="janela_1"
+            style="position: relative;width: 673px;height: 210px;background-color: rgba(0, 77, 115, 0.9);border-radius: 10px;flex-wrap: nowrap;margin-left: 75px;margin-top: -274px;cursor: pointer;display: flex;">
+            <img style="margin-top: 21px;margin-left: 18px;height: 173px;" src="recursos/imgs/SI_32janela1.png">
+            <div style="margin-left: 30px; margin-top: 31px;">
+                <h1 style="color: #fac900;">Máscara cirúrgica</h1>
+                <ul>
+                    <li>Uso individual.</li>
+                    <li>Deve ser trocada a cada 2h ou sempre que úmida.</li>
+                    <li>Pessoas sintomáticas, equipe de saúde e profissionais de segurança.</li>
+                    <li>Obrigatória no manejo de pessoas com sintomas gripais.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="janela_2"
+            style="position: relative;width: 673px;height: 210px;background-color: rgba(0, 77, 115, 0.9);border-radius: 10px;flex-wrap: nowrap;margin-left: 75px;margin-top: -274px;cursor: pointer;display: flex;">
+            <img style="margin-top: 21px;margin-left: 18px;height: 173px;" src="recursos/imgs/SI_32janela2.png">
+            <div style="margin-left: 30px; margin-top: 31px;">
+                <h1 style="color: #fac900;">N95/PFF2</h1>
+                <ul>
+                    <li>Uso exclusivo de profissionais de saúde.</li>
+                    <li>Utilizadas em determinados procedimentos que expelem aerossóis de secreções respiratórias
+                        (intubação, aspiração etc.).</li>
+                </ul>
+            </div>
+        </div>
+        <div id="janela_3"
+            style="position: relative;width: 673px;height: 210px;background-color: rgba(0, 77, 115, 0.9);border-radius: 10px;flex-wrap: nowrap;margin-left: 75px;margin-top: -274px;cursor: pointer;display: flex;">
+            <img style="margin-top: 21px;margin-left: 18px;height: 173px;" src="recursos/imgs/SI_32janela3.png">
+            <div style="margin-left: 30px; margin-top: 31px;">
+                <h1 style="color: #fac900;">Máscara caseira</h1>
+                <ul>
+                    <li>Uso individual de pessoas assintomáticas.</li>
+                    <li>Deve ser usada sempre ao sair de casa.</li>
+                    <li>Deve conter duas camadas de tecido e cobrir totalmente a boca e o nariz, sem deixar espaços
+                        nas
+                        laterais.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="height: 39.05px; width: 100%; background-color: #004c72;">
+    <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
+    <img style="height: 27px;margin: 8.5px 37.05px;position: absolute;right: 0px;" src="recursos/imgs/SI_F2.png">
+</footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
