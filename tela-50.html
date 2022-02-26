@@ -1,24 +1,10 @@
 <style>
-    li {
-        margin-bottom: 12px;
-        margin-left: 18px;
-    }
-
-    .questao:hover {
-        background-color: #004c72;
-        cursor: pointer;
-    }
-
-    .marcado {
-        background-color: #004c72;
-    }
-
     .submeter {
         margin: 1em auto;
         font-weight: bold;
         color: #ffffff;
         border-radius: 3px;
-        background-color: #004c72;
+        background-color: #FAC900;
         border: solid 0 transparent;
         outline: none;
         box-shadow: 0 .1em rgba(0, 0, 0, .5);
@@ -28,139 +14,42 @@
         cursor: pointer;
         text-align: center;
     }
-
-    .feed {
-        position: relative;
-        width: 270px;
-        height: 125px;
-        background-color: #004c72;
-        border-radius: 10px;
-        flex-wrap: nowrap;
-        cursor: pointer;
-    }
 </style>
-<div style="height: 72px; width: 100%; background-color: #004c72; ">
-    <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;"> <img
-            style="height: 43.5px; width:180px; margin-top: 12.8px; margin-left: 68.45px;"
-            src="recursos/imgs/SI_H1.png">
-        <img style="height: 73px; margin-left:170.85px;" src="recursos/imgs/SI_H2.png"> <img
-            style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;" src="recursos/imgs/SI_H3.png">
-    </div>
-    <div class="coluna-esquerda largura-1_3">
-        <img class="animate__animated animate__flipInX"
-            style="height: 219.4px; width: 241.85px; margin-top: 80.65px; margin-left: 35px;"
-            src="recursos/imgs/SI_listras.png">
-    </div>
-    <div class="coluna-direita largura-2_1" style="width: 480px; height: 500px; margin-top: 80px; margin-right: 60px;">
-        <h1>Questão 3</h1>
-        <p><strong>Para o diagnóstico e rastreio de casos, são disponibilizados testes diagnósticos. Alguns deles
-                detectam o material
-                genético do vírus em amostras obtidas de raspado (swab) das cavidades nasal e oral. Outros
-                identificam pedaços virais
-                nesse mesmo tipo de amostra. Entretanto, há aqueles que identificam a presença de anticorpos no
-                organismo, são os
-                denominados testes sorológicos. Supondo que uma pessoa apresente sintomas gripais e considerando a
-                suspeita de covid-19,
-                seria indicado um teste sorológico já no primeiro dia de sintoma.</strong>
-        </p>
-        <p class="questao" id="opc_e">a) Verdadeiro</p>
-        <p class="questao" id="opc_c">b) Falso</p>
-        <div class="submeter" style="display: none;">Submeter</div>
-
-        <div style="margin-top: -200px;width: 500px;height: 280px;" class="feed" id="feedCerto">
-            <img style="height: 70px; margin-top: -48px; margin-left: 30px;margin-bottom: 15px;"
-                src="recursos/imgs/SI_CE.png">
-            <h2 style="margin-left: 30px; color: #fac900;">Resposta correta</h2>
-            <p style="margin-left: 30px; width: 450px; color: white;">Isso mesmo! Esse exame identifica a presença
-                de anticorpos contra o vírus no sangue do paciente. O nosso corpo, quando
-                entra em contato com qualquer agente infeccioso, seja ele vírus, bactéria ou fungo reage contra esse
-                agente. Essa
-                resposta do organismo busca produzir imunidade para que não tenhamos novamente a doença, em caso de
-                novo contato com o
-                mesmo agente infeccioso. As células de defesa que combatem esses germes produzem pequenas partículas
-                de memória contra o
-                agente infeccioso, que são chamadas de anticorpos. Caso sejamos expostos novamente àquele agente,
-                esses anticorpos
-                reconhecem rapidamente a presença dele, encapam esse germe e chamam novas células de defesa para
-                destruir o mais
-                rapidamente possível os agentes infecciosos. Todo esse processo de defesa do organismo e produção de
-                anticorpos demanda
-                tempo, por isso os exames sorológicos (sorologia clássica ou teste rápido) são recomendados apenas a
-                partir do 8o dia de
-                início dos sintomas.</p>
-        </div>
-        <div style="margin-top: -250px; width: 500px; height: 288px; display: none;" class="feed" id="feedErrado">
-            <img style="height: 70px; margin-top: -48px; margin-left: 30px;margin-bottom: 15px;"
-                src="recursos/imgs/SI_CE.png">
-            <h2 style="margin-left: 30px; color: #fac900;">Resposta incorreta</h2>
-            <p style="margin-left: 30px; width: 450px; color: white;">Na verdade, a afirmativa está incorreta. Esse
-                exame identifica a presença de anticorpos contra o vírus no sangue do
-                paciente. O nosso corpo, quando entra em contato com qualquer agente infeccioso, seja ele vírus,
-                bactéria ou fungo reage
-                contra esse agente. Essa resposta do organismo busca produzir imunidade para que não tenhamos
-                novamente a doença, em
-                caso de novo contato com o mesmo agente infeccioso. As células de defesa que combatem esses germes
-                produzem pequenas
-                partículas de memória contra o agente infeccioso, que são chamadas de anticorpos. Caso sejamos
-                expostos novamente àquele
-                agente, esses anticorpos reconhecem rapidamente a presença dele, encapam esse germe e chamam novas
-                células de defesa
-                para destruir o mais rapidamente possível os agentes infecciosos. Todo esse processo de defesa do
-                organismo e produção
-                de anticorpos demanda tempo, por isso os exames sorológicos (sorologia clássica ou teste rápido) são
-                recomendados apenas
-                a partir do 8o dia de início dos sintomas.</p>
-        </div>
-    </div>
-    <footer style="height: 39.05px; width: 100%; background-color: #004c72;">
-        <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
-        <img style="height: 27px;margin: 8.5px 37.05px;position: absolute;right: 0px;" src="recursos/imgs/SI_F2.png">
-    </footer>
-
-    <script>
-        $(() => {
-            let resposta = '';
-            let mostrarSub = true;
-            let feedCerto = $(document).find('[id^=feedCerto]').hide();
-            let feedErrado = $(document).find('[id^=feedErrado]').hide();
-            let submeter = $(document).find('[class=submeter]').hide();
-
-            $(feedCerto).on('click', apagarFeeds);
-            $(feedErrado).on('click', apagarFeeds);
-
-            function apagarFeeds() {
-                feedCerto.fadeOut();
-                feedErrado.fadeOut();
-            }
-
-            function desmarcarTudo() {
-                let questao = $(document).find('[id^=opc]').map((index, sel) => {
-                    $(sel).removeClass("marcado");
-                })
-            }
-
-            let questao = $(document).find('[id^=opc]').map((index, sel) => {
-                $(sel).click(() => {
-                    console.log(sel.id);
-                    resposta = sel.id;
-                    if (mostrarSub) {
-                        submeter.fadeIn();
-                    }
-                    desmarcarTudo();
-                    $(sel).addClass("marcado");
-                })
-            })
-
-            $(submeter).on('click', () => {
-                console.log("clicou " + resposta.split("_")[1]);
-                if (resposta.split("_")[1] == "c") {
-                    $(feedCerto).fadeIn();
-                    pontos += 1;
-                    mostrarSub = false;
-                    submeter.hide();
-                } else {
-                    $(feedErrado).fadeIn();
-                }
-            })
-        })
-    </script>
+<div style="height: 72px; width: 100%; background-color:  #004c72; ">
+    <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;" />
+    <img style="height: 43.5px; width:180px; margin-top: 12.8px; margin-left: 50px;" src="recursos/imgs/SI_H1.png">
+    <img style="height: 73px; margin-left:170.85px;" src="recursos/imgs/SI_H2.png">
+    <img style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;" src="recursos/imgs/SI_H3.png">
+</div>
+<div class="coluna-esquerda largura-1_3">
+    <img class="animate__animated animate__flipInX"
+        style="height: 219.4px; width: 241.85px; margin-top: 80.65px; margin-left: 35px;" src="recursos/imgs/SI_listras.png">
+</div>
+<div class="coluna-direita largura-2_1" style="width: 500px; height: 500px; margin-top: 80px;margin-right: 75px;">
+    <h1>Rendimento</h1>
+    <p id="texto"></p>
+    <p>Você pode refazer este exercício quantas vezes quiser.</p>
+</div>
+<footer style="height: 39.05px; width: 100%; background-color: #004c72;">
+    <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
+    <img style="height: 27px;margin: 8.5px 37.05px;position: absolute;right: 0px;" src="recursos/imgs/SI_F2.png">
+</footer>
+<script>
+    $(() => {
+        let resposta = '';
+        var conteudo = $("#texto").html();
+        let submeter = $(document).find('[class=submeter]').on('click', () => {
+            console.log('tentando');
+            window.location("#tela-54")
+        });
+        console.log(qtdQuestoes);
+        console.log(pontos);
+        if (pontos == qtdQuestoes) {
+            console.log("certo");
+            $("#texto").html("<p>De um total de " + qtdQuestoes + " questões, você acertou " + pontos + ".</p>")
+        } else {
+            console.log("errado");
+            $("#texto").html("<p>De um total de " + qtdQuestoes + " questões, você acertou " + pontos + ".</p><p style='color: red;'>Estude um pouco mais o conteúdo do curso e refaça a avaliação quando se sentir preparado(a).</p>")
+        }
+    })
+</script>

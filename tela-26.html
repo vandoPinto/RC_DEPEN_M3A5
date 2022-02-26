@@ -1,55 +1,141 @@
 <div style="height: 72px; width: 100%; background-color: #004c72; ">
-    <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;"><img
-            style="height: 43.5px; width:180px; margin-top: 12.8px; margin-left: 68.45px;"
-            src="recursos/imgs/SI_H1.png"><img style="height: 73.05px; width:108.45px; margin-left:170.85px;"
-            src="recursos/imgs/SI_H2.png"><img style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;"
-            src="recursos/imgs/SI_H3.png">
+    <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;">
+        <img style="height: 43.5px; width:180px; margin-top: 12.8px; margin-left: 68.45px;"
+            src="recursos/imgs/SI_H1.png">
+        <img style="height: 73px; margin-left:170.85px;" src="recursos/imgs/SI_H2.png">
+        <img style="height: 46.8px; width:56.75px;  position: absolute; right: 1px;" src="recursos/imgs/SI_H3.png">
     </div>
-    <div class="coluna-esquerda largura-1_2 animate__animated animate__backInLeft">
-        <img id="botao_1" style="margin-top: 141px;margin-left: 20px;width: 270px; cursor: pointer;"
-            src="recursos/imgs/SI_26.png">
+</div>
+<div>
+    <div
+        style="margin-top: 50px;margin-left: 64px;background-color: #004c72;width: 770px;height: 280px;border-radius: 10px;position: absolute;">
     </div>
-    <div class="coluna-direita ">
-        <div style="margin-top: 125px;margin-right: 40px;width: 518px;">
-            <h1>Como é feito o acompanhamento clínico de pessoas diagnosticadas com covid-19?</h1>
-            <p style="margin-top: 20px;">Agora que já vimos como identificar um quadro suspeito da covid-19, como
-                diagnosticar e quais os tipos de exames
-                existentes, é importante verificarmos como acompanhar e conduzir os casos de covid-19 no sistema
-                prisional.
-            </p>
-            <p>Em Nota Técnica, a Anvisa estabeleceu critérios de isolamento e observações importantes que devem ser
-                considerados pelas
-                equipes de saúde das unidades prisionais. No quadro ao lado, é possível observar os tempos de
-                isolamento de acordo com
-                cada situação.</p>
-            <p>Clique no quadro para ampliar e ver as informações.</p>
+    <div
+        style="display: inline-flex;margin-top: 170px;margin-left: 70px;width: 760px;justify-content: space-between;position: absolute;">
+        <img id="volta" src="recursos/imgs/SI_20_volta.png" style="width: 20px; cursor: pointer; opacity: 0.6;">
+        <img id="avanca" src="recursos/imgs/SI_20_avanca.png" style="width: 20px; cursor: pointer; opacity: 1;">
+    </div>
+    <div id="janela_1">
+        <p
+            style="position: absolute;margin-left: 247px;margin-right: auto;color: white;width: 49%;height: 230px;margin-top: 70px;display: flex;align-items: center;">
+            A respeito dos critérios de isolamento no sistema prisional e considerando as especificidades de cada
+            público, navegue pelo carrossel para compreender as ações adotadas a cada grupo.</p>
+    </div>
+    <div id="janela_2"
+        style="position: absolute; margin-left: 102px; margin-right: auto; color: white; height: 240px; margin-top: 76px; align-items: center; display: none; display: flex;">
+        <img src="recursos/imgs/SI_27_janela2.png" style="width: 325px;cursor: pointer;">
+        <div style="display: flex;flex-direction: column;width: 338px;margin-left: 35px;">
+            <h1 style="color: #fac900;">Pessoas Privadas de Liberdade (PPL)</h1>
+            <p>
+                É preciso mantê-las em cela isoladas ou em isolamento em coorte (isoladas na mesma cela que outras
+                pessoas com suspeita
+                ou confirmação da infecção pelo SARS-CoV-2), em local bem ventilado, preferencialmente até o fim dos
+                10 dias após o
+                início do período sintomático e pelo menos por 24 horas sem febre e melhora dos sintomas.</p>
+            <p>Esses casos devem ser manejados com medidas não farmacológicas, como repouso, hidratação, alimentação
+                adequada, higiene
+                respiratória, além de analgésicos e antitérmicos.</p>
         </div>
     </div>
-    <div id="janela_1"
-        style="position: absolute;width: 713px;height: 300px;background-color: rgb(0, 77, 115);border-radius: 10px;top: 109px;left: 100px;cursor: pointer;">
-        <img style="margin-top: 30px;margin-left: 45px;height: 240px;" src="recursos/imgs/SI_26.png">
-        <p style="color: white;margin-left: 47px;margin-top: -6px;">Fonte: GVIMS/GGTES/Anvisa, 2021</p>
+    <div id="janela_3"
+        style="position: absolute; margin-left: 155px; margin-right: auto; color: white; height: 240px; margin-top: 70px; align-items: center; display: flex;">
+        <div style="display: flex;flex-direction: column;width: 367px;margin-left: -30px;">
+            <h1 style="color: #fac900;">Servidores do sistema prisional</h1>
+            <p>
+                Devem-se incluir medidas de suporte e conforto, isolamento domiciliar e monitoramento até alta do
+                isolamento.</p>
+        </div>
+        <img src="recursos/imgs/SI_27_janela3.png" style="width: 305px;cursor: pointer;">
+    </div>
+    <div id="janela_4"
+        style="position: absolute;margin-left: 105px;color: white;height: 240px;width: 699px;margin-top: 70px;align-items: center;display: flex;">
+        <img src="recursos/imgs/SI_27_janela4.png" style="width: 275px; cursor: pointer;">
+        <div style="display: flex;flex-direction: column;width: 360px;margin-left: 45px;">
+            <h1 style="color: #fac900;">Contatos domiciliares de pessoas com diagnóstico da covid-19</h1>
+            <p>
+                Considerando a situação vivenciada em nosso país em decorrência da pandemia, todos os contatos
+                domiciliares de pessoas
+                com diagnóstico de covid-19 devem ser testadas, quando possível, e, se for o caso, manterem-se em
+                isolamento por 10 dias
+                após o início do período sintomático e pelo menos por 24 horas sem febre e melhora dos sintomas.
+            </p>
+        </div>
     </div>
 </div>
 <footer style="height: 39.05px; width: 100%; background-color: #004c72;">
-    <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
-    <img style="height: 27px;margin: 8.5px 37.05px;position: absolute;right: 0px;" src="recursos/imgs/SI_F2.png">
+    <img style="height: 22.65px; margin: 8.5px 37.05px;" src="recursos/imgs/SI_F1.png">
+    <img style="height: 22.75px; margin: 8.5px 37.05px; position: absolute; right: 0px;" src="recursos/imgs/SI_F2.png">
 </footer>
-
+<div id="conteudo"
+    style="position: absolute; background-color: rgb(250, 201, 1); top: 220px; right: 290px; width: 357px; border-radius: 10px; display: none;">
+    <p style="text-align: center;">Multiplicação anormal de células de um tecido que pode ocasionar
+        consequências graves
+        ao corpo; tumor, câncer.</p>
+</div>
 <script>
     $(() => {
-        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        let janelas = $(document).find('[id^=janela]');
+        let avanca = $(document).find('[id^=avanca]').on('click', avancar);
+        let volta = $(document).find('[id^=volta]').on('click', voltar);
+        let contador = 1;
+        $(volta).css('opacity', '0.6');
+
         apagarJanelas();
+        $(document).find('[id^=janela_1]').show();
+
+        function avancar() {
+            if (contador < janelas.length) {
+                apagarJanelas();
+                contador++;
+                $(document).find(`[id^=janela_${contador}]`).show();
+            }
+            mudarBotoes();
+        }
+
+        function voltar() {
+            if (contador > 1) {
+                apagarJanelas();
+                contador--;
+                $(document).find(`[id^=janela_${contador}]`).show();
+            }
+            mudarBotoes();
+        }
+
+        function mudarBotoes() {
+            if (contador == 1) {
+                $(volta).css('opacity', '0.6');
+                $(avanca).css('opacity', '1');
+            }
+            if (contador == janelas.length) {
+                $(volta).css('opacity', '1');
+                $(avanca).css('opacity', '0.6');
+            }
+            if (contador > 1 && contador < janelas.length) {
+                $(volta).css('opacity', '1');
+                $(avanca).css('opacity', '1');
+            }
+        }
+
         let botoes = $(document).find('[id^=botao]').map((index, botao) => {
             $(botao).click(() => {
                 apagarJanelas();
-                $(janelas[index]).fadeIn();
+                mudarBotao(index + 1)
+                $(janelas[index + 1]).show();
             })
         })
+
         function apagarJanelas() {
             janelas.map((index, janela) => {
                 $(janela).hide();
             })
         }
+
+        let conteudo = $('#conteudo').hide();
+        $('#hotWord-bt').hover(() => {
+            conteudo.fadeIn()
+        })
+        $('#hotWord-bt').mouseout(() => {
+            conteudo.fadeOut()
+        })
     })
 </script>
