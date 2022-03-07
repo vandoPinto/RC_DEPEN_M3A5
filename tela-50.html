@@ -23,7 +23,8 @@
 </div>
 <div class="coluna-esquerda largura-1_3">
     <img class="animate__animated animate__flipInX"
-        style="height: 219.4px; width: 241.85px; margin-top: 80.65px; margin-left: 35px;" src="recursos/imgs/SI_listras.png">
+        style="height: 219.4px; width: 241.85px; margin-top: 80.65px; margin-left: 35px;"
+        src="recursos/imgs/SI_listras.png">
 </div>
 <div class="coluna-direita largura-2_1" style="width: 500px; height: 500px; margin-top: 80px;margin-right: 75px;">
     <h1>Rendimento</h1>
@@ -42,14 +43,16 @@
             console.log('tentando');
             window.location("#tela-54")
         });
-        console.log(qtdQuestoes);
-        console.log(pontos);
-        if (pontos == qtdQuestoes) {
+
+        var meusPontos = pontos.reduce(function (soma, i) {
+            return soma + i;
+        });
+        if (meusPontos == qtdQuestoes) {
             console.log("certo");
-            $("#texto").html("<p>De um total de " + qtdQuestoes + " questões, você acertou " + pontos + ".</p>")
+            $("#texto").html("<p>De um total de " + qtdQuestoes + " questões, você acertou " + meusPontos + ".</p>")
         } else {
             console.log("errado");
-            $("#texto").html("<p>De um total de " + qtdQuestoes + " questões, você acertou " + pontos + ".</p><p style='color: red;'>Estude um pouco mais o conteúdo do curso e refaça a avaliação quando se sentir preparado(a).</p>")
+            $("#texto").html("<p>De um total de " + qtdQuestoes + " questões, você acertou " + meusPontos + ".</p><p style='color: red;'>Estude um pouco mais o conteúdo do curso e refaça a avaliação quando se sentir preparado(a).</p>")
         }
     })
 </script>
